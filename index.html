@@ -5,21 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <title>Clothes Tracker</title>
   </head>
   <body>
-    <h1>Clothes Tracker</h1>
+    <h1 class="title">Clothes Tracker</h1>
     <div class="selection-container">
-      <div class="selection-item">season dropdown</div>
-      <div class="selection-item">type dropdown</div>
-      <div class="selection-item">color checklist</div>
-    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Season</button>
+        <div class="dropdown-content">
+          <a href="#">Spring</a>
+          <a href="#">Summer</a>
+          <a href="#">Winter</a>
+          <a href="#">Fall</a>
+        </div>
+      </div>
 
-    <button>Find clothes</button>
-    <h2>Results</h2>
+      <div class="dropdown">
+        <button class="dropbtn">Type</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Color Checklist</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
+      <button class="findbtn">Find clothes</button>
+    </div>
+    <h2 class="title">Results</h2>
     <div class="results-container">
       <div class="results-item">
-        <h3>Name of Item</h3>
+        <h3 class="title">Name of Item</h3>
         <img src="./media/winter_dress.jpeg" />
         <div class="tags-container">
           <div class="tag">winter</div>
@@ -31,7 +61,7 @@
       </div>
 
       <div class="results-item">
-        <h3>Name of Item</h3>
+        <h3 class="title">Name of Item</h3>
         <img src="./media/summer_dress.jpeg" />
         <div class="tags-container">
           <div class="tag">summer</div>
@@ -42,7 +72,7 @@
       </div>
 
       <div class="results-item">
-        <h3>Name of Item</h3>
+        <h3 class="title">Name of Item</h3>
         <img src="./media/spring_dress.jpeg" />
         <div class="tags-container">
           <div class="tag">spring</div>
@@ -54,4 +84,3 @@
     </div>
   </body>
 </html>
-
