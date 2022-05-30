@@ -8,6 +8,13 @@ button {
   margin: 32px;
 }
 
+.checkmarks-colors {
+  background: rgb(241, 226, 226);
+  flex-direction: column;
+  width: 70px;
+  text-align: start;
+}
+
 img {
   width: 200px;
   border-radius: 16px;
@@ -15,13 +22,14 @@ img {
 }
 
 .selection-container {
-  display: flex;
-  flex-direction: row;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .selection-item {
   margin: 24px;
+  width: 50%;
 }
 
 .results-container {
